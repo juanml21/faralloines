@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 const config = require("./config.json");
-client.login('ODAyNDA0Mzg2NDUzODQ4MDY1.YAuvUQ.ngg1_UMr6XQkMbmH-8cWfEp8RTE');
+client.login(process.env.TOKEN);
 
 var PREFIX = config.PREFIX;
 client.on("message", (message) => {
